@@ -2,10 +2,12 @@
  * Resolver - это абстракция, которая определяет,
  * как контейнер будет разрешать зависимость
  */
-protocol Resolver<T> {
+public class Resolver<T> {
     /**
      * Разрешает зависимость типа [T]
      * @return - возвращает объект типа [T]
      */
-    func resolve() -> T
+    func resolve() -> T {
+        preconditionFailure("TODO: Need implement Resolver")
+    }
 }
